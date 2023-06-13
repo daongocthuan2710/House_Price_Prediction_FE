@@ -534,14 +534,10 @@ export default function App() {
           ) : (
             ""
           )}
-          {LSTMData.length > 0 ? (
-            <LSTMCharts
-              theme={isDarkMode ? "dark" : "light"}
-              option={optionLSTM(LSTMData)}
-            />
-          ) : (
-            ""
-          )}
+          <LSTMCharts
+            theme={isDarkMode ? "dark" : "light"}
+            option={optionLSTM(LSTMData)}
+          />
         </CustomChartWrapper>
       </CustomContainer>
     </>
